@@ -23,7 +23,7 @@ const handle = async (
           pixel: req.query.pixel as string || '■'
         }))
       } catch(err) {
-        return void res.status(400).json((err as Error).message)
+        return void res.status(400).json({ message: (err as Error).message})
       }
     }
     const data = await stats(req.query.username as string)
