@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { GithubClient } from 'fubuki'
+import { GithubClient } from '../../src/github'
 import { Ratings, Card } from '../../src/Card'
 const handle = async (req: NextApiRequest, res: NextApiResponse) => {
     if (!req.query.username) return void res.status(400).json({ message: '`username must be provided`' })
