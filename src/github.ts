@@ -14,4 +14,4 @@ const github = () => {
     }
 }
 export default github
-export { GithubClient } 
+export { GithubClient }
