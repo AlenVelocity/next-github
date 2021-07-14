@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@primer/octicons": "^14.2.2",
+    "@primer/octicons-react": "^14.2.2",
     "chart.js": "^3.4.1",
     "dotenv": "^10.0.0",
     "fubuki": "^1.1.0",
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "@types/react": "17.0.14",
+    "@types/styled-components": "^5.1.11",
     "eslint": "7.30.0",
     "eslint-config-next": "11.0.1",
     "prettier": "^2.3.2",
