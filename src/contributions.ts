@@ -26,16 +26,13 @@ export const getContributions = async (username: string) => {
         throw new Error('Missing required arguments')
     }
 
-    const {  contributions: contributionCalendar  } = await github()(username)
+    const { contributions: contributionCalendar } = await github()(username)
 
     if (!contributionCalendar || !contributionCalendar['weeks'] || !contributionCalendar['totalContributions']) {
         throw new Error('Could not get contributions data')
     }
 
-    const {
-        weeks,
-        totalContributions
-    } = contributionCalendar
+    const { weeks, totalContributions } = contributionCalendar
 
     const contributions = (weeks as { contributionDays: ContributionDay[] }[]).map((week) => week.contributionDays)
 

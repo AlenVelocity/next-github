@@ -1,9 +1,12 @@
-import { GithubClient  } from 'fubuki'
+import { GithubClient } from 'fubuki'
 
 const github = () => {
     const fubuki = new GithubClient(process.env.GITHUB_ACESS_TOKEN as string)
     return async (username: string) => {
-        const [user, contributions] = await Promise.all([fubuki.getUser(username), fubuki.getContributionsCalender(username)])
+        const [user, contributions] = await Promise.all([
+            fubuki.getUser(username),
+            fubuki.getContributionsCalender(username)
+        ])
         return {
             user,
             contributions
@@ -11,4 +14,4 @@ const github = () => {
     }
 }
 
-export default github 
+export default github

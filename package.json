@@ -6,12 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier-format": "prettier --config .prettierrc \"src/**/*[.ts|.tsx]\" --write"
   },
   "dependencies": {
+    "@primer/octicons": "^14.2.2",
     "chart.js": "^3.4.1",
     "dotenv": "^10.0.0",
-    "fubuki": "^1.0.4",
+    "fubuki": "github:alensaito1/fubuki",
     "next": "11.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -22,6 +24,7 @@
     "@types/react": "17.0.14",
     "eslint": "7.30.0",
     "eslint-config-next": "11.0.1",
+    "prettier": "^2.3.2",
     "typescript": "4.3.5"
   }
 }
