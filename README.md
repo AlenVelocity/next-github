@@ -41,6 +41,8 @@ curl 'https://next-github-tau.vercel.app/api/contributions?username=[USERNAME]'
 ```
 Replace `[USERNAME]` with your Github Username and Run in your terminal
 
+![Terminal](assets/images/terminal.png)
+
 ------
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
