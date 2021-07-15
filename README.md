@@ -1,6 +1,6 @@
 <div align=center>
 
-[![Mark](/assets/images/mark-github.svg)](https://next-github-tau.vercel.app/h)
+[![Mark](/assets/images/mark-github.svg)](https://next-github-tau.vercel.app/)
 ## 🎟️ Next-Github-Stats  🎟️
 ### 🌟 Generate Dynamic Github Stats & More  🌟
 
