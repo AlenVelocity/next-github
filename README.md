@@ -1,12 +1,14 @@
 <div align=center>
 
+[![Mark](/assets/images/mark-github.svg)](https://next-github-tau.vercel.app/h)
 ## 🎟️ Next-Github-Stats  🎟️
 ### 🌟 Generate Dynamic Github Stats & More  🌟
 
 </div>
 
-### [🔅 Live Site](https://next-github-tau.vercel.app/)
 
+## 🛠️ Features
+> Features of Next-github
 ## 🎴 Card
 > Stats card
 
@@ -44,5 +46,7 @@ Replace `[USERNAME]` with your Github Username and Run in your terminal
 ![Terminal](assets/images/terminal.png)
 
 ------
+
+[![Vercel](assets/images/powered-by-vercel.svg)](now.sh)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
