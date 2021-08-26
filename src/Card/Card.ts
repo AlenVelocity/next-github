@@ -25,15 +25,15 @@ export default class Card {
       
       ${titleTemplate(octicons['mark-github'].heights[16].path)}
       ${commitsTemplate(octicons['git-commit'].heights[16].path, {
-          year: parseInt(this.ratings.thisYearCommits / this.ratings.metrics.THIS_YEAR_COMMITS),
-          month: parseInt(this.ratings.thisMonthCommits / this.ratings.metrics.THIS_MONTH_COMMITS),
-          week: parseInt(this.ratings.thisWeekCommits / this.ratings.metrics.THIS_WEEK_COMMITS)
+          year: Math.round(this.ratings.thisYearCommits / this.ratings.metrics.THIS_YEAR_COMMITS),
+          month: Math.round(this.ratings.thisMonthCommits / this.ratings.metrics.THIS_MONTH_COMMITS),
+          week: Math.round(this.ratings.thisWeekCommits / this.ratings.metrics.THIS_WEEK_COMMITS)
       })}
       ${pullRequestsTemplate(octicons['git-pull-request'].heights[16].path, this.ratings.pullRequests)}
       ${issuesTemplate(octicons['bug'].heights[16].path, parseInt(this.ratings.issues / this.ratings.metrics.ISSUES))}
       ${codeReviewTemplate(
           octicons['code-review'].heights[16].path,
-          parseInt(this.ratings.codeReviews / this.ratings.metrics.ISSUES)
+          Math.round(this.ratings.codeReviews / this.ratings.metrics.ISSUES)
       )}    
     </svg>
   `
