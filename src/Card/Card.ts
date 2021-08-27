@@ -30,7 +30,7 @@ export default class Card {
           week: Math.round(this.ratings.thisWeekCommits / this.ratings.metrics.THIS_WEEK_COMMITS)
       })}
       ${pullRequestsTemplate(octicons['git-pull-request'].heights[16].path, this.ratings.pullRequests)}
-      ${issuesTemplate(octicons['bug'].heights[16].path, parseInt(this.ratings.issues / this.ratings.metrics.ISSUES))}
+      ${issuesTemplate(octicons['bug'].heights[16].path, Math.round(this.ratings.issues / this.ratings.metrics.ISSUES))}
       ${codeReviewTemplate(
           octicons['code-review'].heights[16].path,
           Math.round(this.ratings.codeReviews / this.ratings.metrics.ISSUES)
